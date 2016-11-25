@@ -22,7 +22,8 @@
 	myApp.controller("myController",function($scope,$http){
 		$scope.clickFn=function(){
 			// console.log("ok");
-			$http.get("demo%20v10%20start.php").success(function(response){
+			//$http.get("demo%20v10%20start.php").success(function(response){
+			$http.get("demo.php").success(function(response){
 				console.log(response);
 			});
 		}
